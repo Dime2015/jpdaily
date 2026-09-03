@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>日股小报 · 2026-09-01</title>
+<title>日股小报 · 2026-09-03</title>
 <style>
   :root {
     --paper: #f3efe6;
@@ -61,96 +61,100 @@
 </style>
 </head>
 <body>
-  <div class="kicker">试运行 · 收盘复盘 · 不是荐股</div>
+  <div class="kicker">收盘复盘 · 不是荐股</div>
   <h1>日股小报</h1>
-  <p class="deck">2026年9月1日（周二）。日经小跌，东证指数却涨。早盘被利率和油价砸了700点，下午买回来了。人话：贵的科技被砍，便宜的电力、商社、汽车有人接。<span class="sup">1,2</span></p>
+  <p class="deck">2026年9月3日（周四）。早盘想反弹，收盘日经还是绿的，已经连跌四天。真正动的是日元：一天里兑美元猛升大约三円，摸到一个多月没见过的 156。底下东证指数其实是红的。<span class="sup">1,2,3</span></p>
   <hr class="rule">
 
   <h2>今天市场什么味道</h2>
   <div class="strip">
-    <div class="cell"><div class="l">日经225</div><div class="n down">−0.15%</div></div>
-    <div class="cell"><div class="l">东证指数 TOPIX</div><div class="n up">+0.62%</div></div>
-    <div class="cell"><div class="l">美元兑日元</div><div class="n">160.15</div></div>
-    <div class="cell"><div class="l">日本十年国债</div><div class="n down">2.99%</div></div>
+    <div class="cell"><div class="l">日经225</div><div class="n down">−0.17%</div></div>
+    <div class="cell"><div class="l">东证指数 TOPIX</div><div class="n up">+0.50%</div></div>
+    <div class="cell"><div class="l">美元兑日元</div><div class="n up">156.57</div></div>
+    <div class="cell"><div class="l">日本十年国债</div><div class="n up">2.95%</div></div>
   </div>
-  <p class="note">日经收 66,215.34，跌 96.59 点。TOPIX 收 4,181.86，涨 25.57 点，连涨第 9 天。日元几乎没动。十年国债盘中摸到 3.000%，大约三十年没见过。<span class="sup">1,2,3,4</span></p>
+  <p class="note">日经收 64,214.48，跌 111.16 点。开盘 64,724.81（高开约 399 点），全日低点 63,772.80，高开低走。TOPIX 收 4,102.04，涨 20.44 点。日元按日K约 156.57，相对周二的 160.20 大约升值 2.3%。十年国债从昨天约 3.00% 回到约 2.95%。<span class="sup">1,2,3,4</span></p>
 
   <div class="chart-wrap">
-    <svg viewBox="0 0 640 120" width="100%" height="120" role="img" aria-label="TOPIX近9个交易日收盘">
-      <text x="0" y="14" font-size="12" fill="#6a645a">东证指数 TOPIX 近9日收盘</text>
+    <svg viewBox="0 0 640 120" width="100%" height="120" role="img" aria-label="日经今日开高低收">
+      <text x="0" y="14" font-size="12" fill="#6a645a">日经225 今日路径（开→低→收）</text>
+      <line x1="16" y1="70" x2="624" y2="70" stroke="#d9d1c3" stroke-width="1"/>
+      <text x="16" y="66" font-size="10" fill="#6a645a">昨收 64,326</text>
       <polyline fill="none" stroke="#1c1914" stroke-width="2"
-        points="16.0,100.0 93.0,95.5 170.0,92.0 247.0,80.0 324.0,69.8 401.0,66.1 478.0,48.7 555.0,43.1 632.0,28.0"/>
-      <circle cx="632" cy="28" r="3.5" fill="#1b6b4a"/>
-      <text x="16" y="112" font-size="11" fill="#6a645a">8/20　4059.73</text>
-      <text x="520" y="112" font-size="11" fill="#6a645a">周二 4181.86</text>
+        points="40,38 180,38 400,102 600,72"/>
+      <circle cx="40" cy="38" r="3.5" fill="#1b6b4a"/>
+      <circle cx="400" cy="102" r="3.5" fill="#a33b32"/>
+      <circle cx="600" cy="72" r="3.5" fill="#a33b32"/>
+      <text x="28" y="30" font-size="11" fill="#1b6b4a">开 64,725</text>
+      <text x="330" y="116" font-size="11" fill="#a33b32">低 63,773</text>
+      <text x="520" y="88" font-size="11" fill="#a33b32">收 64,214</text>
     </svg>
-    <div class="chart-cap">来源：J-Quants V2，指数代码 0000<span class="sup">2</span></div>
+    <div class="chart-cap">来源：日经官方四本值。横虚线是昨收。<span class="sup">1</span></div>
   </div>
 
   <h2>板块：谁在挣钱，谁在挨打</h2>
   <div class="chart-wrap">
     <svg viewBox="0 0 640 290" width="100%" height="290" role="img" aria-label="东证17业种市值加权涨跌">
       <line x1="380" y1="6" x2="380" y2="282" stroke="#1c1914" stroke-width="1"/>
-      <rect x="380" y="10" width="201" height="12" fill="#1b6b4a"/><text x="8" y="20" font-size="11">电气煤气 +4.2%</text>
-      <rect x="380" y="26" width="178" height="12" fill="#1b6b4a"/><text x="8" y="36" font-size="11">能源资源 +3.7%</text>
-      <rect x="380" y="42" width="130" height="12" fill="#1b6b4a"/><text x="8" y="52" font-size="11">商社批发 +2.7%</text>
-      <rect x="380" y="58" width="97" height="12" fill="#1b6b4a"/><text x="8" y="68" font-size="11">汽车运输 +2.0%</text>
-      <rect x="380" y="74" width="69" height="12" fill="#1b6b4a"/><text x="8" y="84" font-size="11">建设建材 +1.4%</text>
-      <rect x="380" y="90" width="58" height="12" fill="#1b6b4a"/><text x="8" y="100" font-size="11">房地产 +1.2%</text>
-      <rect x="380" y="106" width="50" height="12" fill="#1b6b4a"/><text x="8" y="116" font-size="11">金融（除银行） +1.1%</text>
-      <rect x="380" y="122" width="42" height="12" fill="#1b6b4a"/><text x="8" y="132" font-size="11">医药品 +0.9%</text>
-      <rect x="380" y="138" width="35" height="12" fill="#1b6b4a"/><text x="8" y="148" font-size="11">素材化学 +0.7%</text>
-      <rect x="380" y="154" width="31" height="12" fill="#1b6b4a"/><text x="8" y="164" font-size="11">食品 +0.6%</text>
-      <rect x="380" y="170" width="27" height="12" fill="#1b6b4a"/><text x="8" y="180" font-size="11">运输物流 +0.6%</text>
-      <rect x="380" y="186" width="24" height="12" fill="#1b6b4a"/><text x="8" y="196" font-size="11">银行 +0.5%</text>
-      <rect x="380" y="202" width="2" height="12" fill="#1b6b4a"/><text x="8" y="212" font-size="11">电机精密 持平</text>
-      <rect x="380" y="218" width="2" height="12" fill="#1b6b4a"/><text x="8" y="228" font-size="11">信息通信 持平</text>
-      <rect x="378" y="234" width="2" height="12" fill="#a33b32"/><text x="8" y="244" font-size="11">钢铁有色 −0.1%</text>
-      <rect x="365" y="250" width="15" height="12" fill="#a33b32"/><text x="8" y="260" font-size="11">机械 −0.3%</text>
-      <rect x="348" y="266" width="32" height="12" fill="#a33b32"/><text x="8" y="276" font-size="11">零售 −0.7%</text>
+      <rect x="380" y="10" width="196" height="12" fill="#1b6b4a"/><text x="8" y="20" font-size="11">电气煤气 +2.4%</text>
+      <rect x="380" y="26" width="183" height="12" fill="#1b6b4a"/><text x="8" y="36" font-size="11">商社批发 +2.3%</text>
+      <rect x="380" y="42" width="112" height="12" fill="#1b6b4a"/><text x="8" y="52" font-size="11">金融（除银行） +1.4%</text>
+      <rect x="380" y="58" width="112" height="12" fill="#1b6b4a"/><text x="8" y="68" font-size="11">银行 +1.4%</text>
+      <rect x="380" y="74" width="85" height="12" fill="#1b6b4a"/><text x="8" y="84" font-size="11">机械 +1.1%</text>
+      <rect x="380" y="90" width="54" height="12" fill="#1b6b4a"/><text x="8" y="100" font-size="11">医药品 +0.7%</text>
+      <rect x="380" y="106" width="44" height="12" fill="#1b6b4a"/><text x="8" y="116" font-size="11">运输物流 +0.6%</text>
+      <rect x="380" y="122" width="27" height="12" fill="#1b6b4a"/><text x="8" y="132" font-size="11">信息通信 +0.3%</text>
+      <rect x="380" y="138" width="19" height="12" fill="#1b6b4a"/><text x="8" y="148" font-size="11">建设建材 +0.2%</text>
+      <rect x="380" y="154" width="3" height="12" fill="#1b6b4a"/><text x="8" y="164" font-size="11">素材化学 持平</text>
+      <rect x="377" y="170" width="3" height="12" fill="#a33b32"/><text x="8" y="180" font-size="11">汽车运输 持平</text>
+      <rect x="369" y="186" width="11" height="12" fill="#a33b32"/><text x="8" y="196" font-size="11">电机精密 −0.1%</text>
+      <rect x="350" y="202" width="30" height="12" fill="#a33b32"/><text x="8" y="212" font-size="11">能源资源 −0.4%</text>
+      <rect x="333" y="218" width="47" height="12" fill="#a33b32"/><text x="8" y="228" font-size="11">零售 −0.6%</text>
+      <rect x="330" y="234" width="50" height="12" fill="#a33b32"/><text x="8" y="244" font-size="11">食品 −0.6%</text>
+      <rect x="328" y="250" width="52" height="12" fill="#a33b32"/><text x="8" y="260" font-size="11">房地产 −0.6%</text>
+      <rect x="283" y="266" width="97" height="12" fill="#a33b32"/><text x="8" y="276" font-size="11">钢铁有色 −1.2%</text>
     </svg>
-    <div class="chart-cap">东证17业种，市值加权，只算 300 亿日元以上的股票。未计入「其他」大杂烩。<span class="sup">2</span></div>
+    <div class="chart-cap">东证17业种，市值加权，只算 300 亿日元以上的普通股。未计入「其他」大杂烩。<span class="sup">2</span></div>
   </div>
-  <p>人话：利率往上走，市场买能收利息、能涨价的东西——电、油、商社、车。半导体和机械没人追。日经里权重大的科技一砸，指数就绿；底下大多数股票其实是红的。</p>
+  <p>人话：日经被优衣库、半导体那一挂按住，所以指数绿。底下多数板块是红的——电、商社、银行、金融。钢铁有色最差。这不是全面撤退，是指数和广度又拧着。</p>
 
   <hr class="thin">
   <h2>大事</h2>
   <ol class="news">
-    <li><b>日本十年国债盘中摸到 3%。</b> 大约 1996 年以来头一回。油价、美国加息预期、明年预算概算要求传出约 143 兆日元，几件事叠在一起。收盘回到 2.990%。市场开始给 9 月 17–18 日日银开会加息定价。<span class="sup">4</span></li>
-    <li><b>日经跌、东证涨，是换仓不是崩盘。</b> 早盘日经一度跌 735 点到 65,576。韩国股市后来稳住，期货有人买回来。东京电子大约 −2.6%，藤仓大约 −3.7%；丰田大约 +2.8%，三菱日联小涨。资金从贵的 AI/半导体挪到银行、商社、汽车。<span class="sup">1,5</span></li>
-    <li><b>中东和油价是早盘那一刀的由头。</b> 外面写美伊冲突、原油高，东京跟着美股隔夜的情绪开。日元钉在 160 附近，没有大幅避险买日元。<span class="sup">1,5,3</span></li>
-    <li><b>设备投资还行，但今天没人拿它当主线。</b> 有报道说日本企业二季度资本开支同比增加，托了一下东证广度。真正被定价的是利率，不是这份统计。<span class="sup">6</span></li>
-    <li><b>金融厅今天收了 173 份披露。</b> 多数是回购进度和基金文件。没有足以解释大盘的单份重磅。只拉了清单，没下 PDF。<span class="sup">7</span></li>
+    <li><b>日元一天升大约三円，摸到 156。</b> 大约一个月没见过这个位置。导火索叠了几层：日银高田委员前一天说「别再按一年两次想加息、可以机动、连续加息也行」；美国财长贝森特 1 日说日本该停掉追求宽松的再通胀政策；市场上还有汇率检查、干预的传闻。东京盘里圆继续买。<span class="sup">3,5,6</span></li>
+    <li><b>日经想反弹，收盘还是第四天绿。</b> 隔夜美股反弹，东京高开近 400 点。午前勉强红着收（约 +130 点），午后没新材料，优衣库拖指数，AI/半导体一角也卖。日经收 −0.17%；TOPIX 反而 +0.50%。软银集团、三菱商事、尼康家居（ニトリ）午后还在买。<span class="sup">1,7,8</span></li>
+    <li><b>商社被伯克希尔这句话点着。</b> 新任 CEO 艾贝尔说会「几十年」继续投日本五大商社。三菱商事收 5,059，大约 +4.1%。商社批发板块市值加权 +2.3%，是今天广度里最显眼的一块之一。<span class="sup">2,9</span></li>
+    <li><b>十年国债从 3% 边上退回来。</b> 昨天刚摸过约 3.00%–3.01%，今天大约 2.95%。利率上行的恐慌缓一档，银行、保险还是有人买——加息预期没散，只是债券先松一口气。<span class="sup">4,6</span></li>
+    <li><b>金融厅今天收了 183 份披露。</b> 多数是回购进度和基金文件。没有一份能单独解释大盘。只拉了清单，没下 PDF。<span class="sup">10</span></li>
   </ol>
 
   <hr class="thin">
   <h2>个股：市值不算小的大涨大跌</h2>
-  <p class="note">门槛：时价总额 ≥ 300 亿日元，普通股，去掉 ETF。全市场 4441 只里筛出 2184 只。涨跌幅按复权收盘对收盘。|涨跌|≥5% 的，涨的和跌的各列最多 8 只。<span class="sup">2</span></p>
+  <p class="note">门槛：时价总额 ≥ 300 亿日元，普通股，去掉 ETF/ETN。全市场约 4440 只里筛出 2175 只。涨跌按复权收盘对收盘。|涨跌|≥5% 的，涨的和跌的各列最多 8 只。<span class="sup">2</span></p>
   <div class="pair">
     <div>
       <div class="kicker">涨得多</div>
-      <div class="mv"><div><span class="t">6736 サン电子</span><span class="why">+10.7%，约 2252 亿。游戏机周边。当天没核到过硬公司新闻。<span class="sup">2</span></span></div><div class="up">+10.7%</div></div>
-      <div class="mv"><div><span class="t">4972 综研化学</span><span class="why">+9.9%，约 693 亿，收在年初来高。粘着剂。当天新消息未核实。<span class="sup">2,8</span></span></div><div class="up">+9.9%</div></div>
-      <div class="mv"><div><span class="t">8508 Jトラスト</span><span class="why">+9.1%，约 1023 亿。消费金融。原因未核实。<span class="sup">2</span></span></div><div class="up">+9.1%</div></div>
-      <div class="mv"><div><span class="t">4005 住友化学</span><span class="why">+8.4%，约 1.03 兆。昨天宣布磷化铟外延片量产，今天还在买。<span class="sup">2,9</span></span></div><div class="up">+8.4%</div></div>
-      <div class="mv"><div><span class="t">9508 九州电力</span><span class="why">+8.2%，约 1.04 兆，收在年高。利率上行下电力被买。控股公司上市批准是 16:20 才出的，不能记在盘中账上。<span class="sup">2,10</span></span></div><div class="up">+8.2%</div></div>
-      <div class="mv"><div><span class="t">7826 フルヤ金属</span><span class="why">+7.7%，约 2491 亿。贵金属材料。原因未核实。<span class="sup">2</span></span></div><div class="up">+7.7%</div></div>
-      <div class="mv"><div><span class="t">9684 史克威尔艾尼克斯</span><span class="why">+7.0%，约 1.16 兆。游戏。原因未核实。<span class="sup">2</span></span></div><div class="up">+7.0%</div></div>
-      <div class="mv"><div><span class="t">9501 东京电力</span><span class="why">+6.4%，约 9197 亿。跟九州电力同一条电力线。<span class="sup">2</span></span></div><div class="up">+6.4%</div></div>
+      <div class="mv"><div><span class="t">336A 动态地图平台</span><span class="why">+20.3%，约 421 亿，停板。高精度地图。报道仍在写三井不动产住宅的 3D 空间平台采用。<span class="sup">2,11</span></span></div><div class="up">+20.3%</div></div>
+      <div class="mv"><div><span class="t">593A ティアフォー</span><span class="why">+17.4%，约 2268 亿。自动驾驶软件，7 月上市后连续暴涨，成交约 6600 万股。当天没有核到新的公司公告。<span class="sup">2</span></span></div><div class="up">+17.4%</div></div>
+      <div class="mv"><div><span class="t">603A アイグリッド</span><span class="why">+15.0%，约 400 亿。分散式能源，跟今天电力板块同一条线。单日新消息未核实。<span class="sup">2</span></span></div><div class="up">+15.0%</div></div>
+      <div class="mv"><div><span class="t">2612 かどや製油</span><span class="why">+11.3%，约 688 亿。芝麻油。公司对「非公开化」相关报道发了评论，盘中被炒。<span class="sup">2,12</span></span></div><div class="up">+11.3%</div></div>
+      <div class="mv"><div><span class="t">9843 ニトリHD</span><span class="why">+8.4%，约 1.87 兆。昨天盘后 8 月既存店 +4.4%，连续两个月正增长；今天日元升值对进口商也是加分。<span class="sup">2,13</span></span></div><div class="up">+8.4%</div></div>
+      <div class="mv"><div><span class="t">6862 ミナトHD</span><span class="why">+7.7%，约 312 亿。电子。原因未核实。<span class="sup">2</span></span></div><div class="up">+7.7%</div></div>
+      <div class="mv"><div><span class="t">7826 フルヤ金属</span><span class="why">+7.1%，约 2630 亿。贵金属材料。原因未核实。<span class="sup">2</span></span></div><div class="up">+7.1%</div></div>
+      <div class="mv"><div><span class="t">429A テクセンドフォトマスク</span><span class="why">+6.8%，约 3766 亿。光罩。原因未核实。<span class="sup">2</span></span></div><div class="up">+6.8%</div></div>
     </div>
     <div>
       <div class="kicker">跌得多</div>
-      <div class="mv"><div><span class="t">4588 オンコリス</span><span class="why">−10.7%，约 1224 亿，碰到跌停 3950。昨天还创年高。食道癌药上市的消息已经炒过，更像出尽。<span class="sup">2,11</span></span></div><div class="down">−10.7%</div></div>
-      <div class="mv"><div><span class="t">3103 ユニチカ</span><span class="why">−10.6%，约 863 亿，成交约 1900 万股。公司当天发了所属业种变更。这票今年本来就暴。<span class="sup">2,12</span></span></div><div class="down">−10.6%</div></div>
-      <div class="mv"><div><span class="t">7383 ネットプロテクションズ</span><span class="why">−8.5%，约 408 亿。后付款。原因未核实。<span class="sup">2</span></span></div><div class="down">−8.5%</div></div>
-      <div class="mv"><div><span class="t">6058 ベクトル</span><span class="why">−7.8%，约 946 亿。公关。原因未核实。<span class="sup">2</span></span></div><div class="down">−7.8%</div></div>
-      <div class="mv"><div><span class="t">6016 ジャパンエンジン</span><span class="why">−7.4%，约 896 亿。船用发动机。原因未核实。<span class="sup">2</span></span></div><div class="down">−7.4%</div></div>
-      <div class="mv"><div><span class="t">6787 メイコー</span><span class="why">−6.6%，约 4972 亿。电路板，跟半导体链一起挨打。<span class="sup">2,5</span></span></div><div class="down">−6.6%</div></div>
-      <div class="mv"><div><span class="t">4480 メドレー</span><span class="why">−6.3%，约 857 亿。医疗 IT。原因未核实。<span class="sup">2</span></span></div><div class="down">−6.3%</div></div>
-      <div class="mv"><div><span class="t">5243 note</span><span class="why">−5.7%，约 561 亿。原因未核实。<span class="sup">2</span></span></div><div class="down">−5.7%</div></div>
+      <div class="mv"><div><span class="t">6834 精工技研</span><span class="why">−8.1%，约 2161 亿。光纤连接件，这几天上下都很大。当天新利空未核实。<span class="sup">2</span></span></div><div class="down">−8.1%</div></div>
+      <div class="mv"><div><span class="t">3350 メタプラネット</span><span class="why">−7.0%，约 3575 亿。比特币金库股。利率和避险情绪一起压加密资产相关。<span class="sup">2,14</span></span></div><div class="down">−7.0%</div></div>
+      <div class="mv"><div><span class="t">6613 QD激光</span><span class="why">−7.0%，约 748 亿。原因未核实。<span class="sup">2</span></span></div><div class="down">−7.0%</div></div>
+      <div class="mv"><div><span class="t">278A Terra Drone</span><span class="why">−6.3%，约 1921 亿。无人机。原因未核实。<span class="sup">2</span></span></div><div class="down">−6.3%</div></div>
+      <div class="mv"><div><span class="t">2705 大户屋HD</span><span class="why">−6.3%，约 685 亿。餐饮。原因未核实。<span class="sup">2</span></span></div><div class="down">−6.3%</div></div>
+      <div class="mv"><div><span class="t">6524 湖北工业</span><span class="why">−6.1%，约 1179 亿。电子零件。原因未核实。<span class="sup">2</span></span></div><div class="down">−6.1%</div></div>
+      <div class="mv"><div><span class="t">3110 日东纺绩</span><span class="why">−5.7%，约 5585 亿。玻璃纤维、电子基材。没有核到当天新公告，更像电子链一起被砍。<span class="sup">2</span></span></div><div class="down">−5.7%</div></div>
     </div>
   </div>
-  <p class="note">涨幅榜里一只 Global X 商社 ETF 被筛掉了。令和会计、クラシル 也跌超 6%，名字生僻，不展开。<span class="sup">2</span></p>
+  <p class="note">跌幅榜里一只迪拜原油双倍 ETN 被筛掉了。涨幅第 9、第 10 是 Appier（+6.7%）和技术承继机构（+6.6%），没进前八。<span class="sup">2</span></p>
 
   <hr class="thin">
   <h2>你的关注</h2>
@@ -158,26 +162,28 @@
 
   <hr class="thin">
   <h2>一句判断</h2>
-  <p class="judge">定价的是「日本利率摸到 3%」和半导体估值，不是资金撤离日本。日经绿、东证红，就是这句话的图解。加息会不会在 9 月中旬落地，今天没有新证据，只有市场在提前站队。不是荐股。</p>
+  <p class="judge">定价的是日元，不是日经那 111 点。指数绿、东证红，说明钱没离开日本，只是不愿待在优衣库和贵的半导体里。9 月中旬日银开会之前，汇率和利率谁先稳，股指就跟着谁。不是荐股。</p>
 
   <hr class="thin">
   <footer>
     <div class="kicker">脚注</div>
     <ol>
-      <li>日经官方四本值：开 65,885.47 / 高 66,525.70 / 低 65,576.61 / 收 66,215.34。读卖、日经新闻收盘稿同数。</li>
-      <li>行情与板块：J-Quants API V2（东证官方）。个股日K、东证指数 0000、上市铭柄主数据。市值字段单位为百万日元。</li>
-      <li>美元兑日元：Yahoo 日K，9 月 1 日收 160.15，相对 8 月 31 日几乎持平。</li>
-      <li>十年国债：日经债券稿写盘中 3.000%、午后 2.990%；朝日写约三十年高点；共同通信写预算概算要求约 143 兆日元。</li>
-      <li>换仓与个股权重：日经新闻收盘稿、新华社东京电、优分析/鉅亨。东京电子、藤仓、丰田、软银、铠侠的涨跌来自这些综述，不是逐笔核对。</li>
-      <li>设备投资：新华社转述。不当作今天主因。</li>
-      <li>EDINET v2 文件清单，type=2，日期 2026-09-01，173 份。只读目录，不下附件。</li>
-      <li>综研化学收盘价与年高：四季报在线页面。</li>
-      <li>住友化学磷化铟外延片：8 月 31 日公司侧报道，今日续涨。</li>
-      <li>九州电力：盘中电力板块被买。控股公司上市批准披露时间 16:20，晚于收盘。</li>
-      <li>オンコリス：8 月下旬食道癌药上市相关报道已出现「出尽」字样；今日跌停，未见新的官方利空。</li>
-      <li>ユニチカ：公司 9 月 1 日「所属业种变更」IR。成交量来自行情页。</li>
+      <li>日经官方四本值：开 64,724.81 / 高 64,724.81 / 低 63,772.80 / 收 64,214.48。株探、FT 同数。相对 9 月 2 日收盘 64,325.64 为 −111.16（−0.17%）。</li>
+      <li>行情与板块：J-Quants API V2。个股日K、东证指数代码 0000（今 4102.04 / 昨 4081.60）、上市铭柄主数据。市值字段单位为百万日元。阈值 300 亿。筛后 2175 只。</li>
+      <li>美元兑日元：脚本 Yahoo 日K，9 月 3 日 156.57，9 月 2 日 160.20（−2.27%）。日经新闻写东京盘一度 156 円台、约一个月新高，24 小时大约升值 3 円。</li>
+      <li>十年国债：Investing.com 日K 今约 2.948%、昨约 3.002%；MacroMicro 记 2.96%。日本相互证券 9 月 2 日新发 10 年约 3.010%。JSON 里没有国债字段，以公开行情为准。</li>
+      <li>贝森特「该停再通胀政策」：读卖 9 月 3 日前场稿，转述 1 日记者会。</li>
+      <li>高田委员发言与纽约盘日元：外为どっとコム 9 月 3 日展望、日经纽约汇市稿（2 日纽约收约 158.65–75）。东京续升见日经 11:38 稿（16:02 更新）。</li>
+      <li>高开与午前：日经前场稿（+130.19 收 64,455.83）、时事通信、株探贡献度（软银正贡献、优衣库负贡献最大）。</li>
+      <li>午后乏力：日经 14 时稿「新材料匮乏」。收盘路径以官方四本值为准。</li>
+      <li>伯克希尔 CEO 与商社：日经 11:16 关注股稿。三菱商事收盘 5059、+199（+4.09%）来自投资の森日K，仅作事件核对，板块数字以 J-Quants 为准。</li>
+      <li>EDINET v2 文件清单，type=2，日期 2026-09-03，183 份。只读目录，不下附件。</li>
+      <li>动态地图：株探记停板；FISCO 成长市场综述提到三井不动产住宅 3D 平台采用仍是买盘线索。</li>
+      <li>かどや製油：株探午前涨幅榜写「对非公开化相关报道发表评论」。</li>
+      <li>ニトリ：2 日盘后月次，既存店 +4.4%、全店 +7.1%。日经、フィスコ、みんかぶ 3 日稿。收 3275、+8.41% 与 JSON 一致。</li>
+      <li>メタプラネット：トレーダーズ・ウェブ 2 日已写比特币下跌拖累；今日续跌。JSON 收 279、−7.0%。</li>
     </ol>
-    <p>这是试运行。不是买卖建议。数字错了直接骂。</p>
+    <p>不是买卖建议。数字错了直接骂。</p>
   </footer>
 </body>
 </html>
