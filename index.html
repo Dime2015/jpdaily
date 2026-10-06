@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>日股小报 · 2026-09-17</title>
+<title>日股小报 · 2026-10-06</title>
 <style>
   :root {
     --paper: #f3efe6;
@@ -43,11 +43,6 @@
   svg text { font-family: inherit; }
   .news li { margin: 0 0 10px; }
   .news { padding-left: 1.1em; margin: 0; }
-  .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-  .mv { display: flex; justify-content: space-between; gap: 8px; padding: 7px 0; border-bottom: 1px solid var(--line); font-variant-numeric: tabular-nums; }
-  .mv:last-child { border-bottom: 0; }
-  .mv .t { font-weight: 650; }
-  .mv .why { display: block; font-size: 12px; color: var(--muted); font-weight: 400; }
   .note { font-size: 13px; color: var(--muted); }
   .judge { font-size: 18px; line-height: 1.45; margin: 0; }
   footer { font-size: 12px; color: var(--muted); }
@@ -56,128 +51,98 @@
   @media (max-width: 560px) {
     h1 { font-size: 28px; }
     .strip { grid-template-columns: repeat(2, 1fr); }
-    .pair { grid-template-columns: 1fr; }
   }
 </style>
 </head>
 <body>
   <div class="kicker">收盘复盘 · 不是荐股</div>
   <h1>日股小报</h1>
-  <p class="deck">2026年9月17日（周四）。日经收 64,136，涨 213 点（+0.33%）。开盘就是当天最高（+721），午前几乎吐光，午后捡回来一点。面很宽：TOPIX +0.80%，东证プライム八成以上上涨。拖日经的是半导体，不是大盘。<span class="sup">1,5</span></p>
+  <p class="deck">2026年10月6日（周二）。日经收 70,683.98，涨 737.12 点（+1.05%）。终值回到 7 万，时事和日经都说是 7 月 1 日以来第一次。上午只涨一百多点，下午才拉开。东证指数也涨，但没日经那么显眼。<span class="sup">1,2</span></p>
   <hr class="rule">
 
   <h2>今天市场什么味道</h2>
   <div class="strip">
-    <div class="cell"><div class="l">日经225</div><div class="n up">+0.33%</div></div>
-    <div class="cell"><div class="l">东证指数 TOPIX</div><div class="n up">+0.80%</div></div>
-    <div class="cell"><div class="l">美元兑日元</div><div class="n">155.65</div></div>
-    <div class="cell"><div class="l">日本十年国债</div><div class="n">约 2.99%</div></div>
+    <div class="cell"><div class="l">日经225</div><div class="n up">+1.05%</div></div>
+    <div class="cell"><div class="l">东证指数 TOPIX</div><div class="n up">+0.92%</div></div>
+    <div class="cell"><div class="l">美元兑日元</div><div class="n">158.15</div></div>
+    <div class="cell"><div class="l">十年国债 · 财务省10月5日</div><div class="n">3.085%</div></div>
   </div>
-  <p class="note">日经收 64,136.25，涨 213.25 点。开 64,643.58（当天最高），低 63,824.56，前场收 63,966.87（+44）。后场开 64,178.65。TOPIX 收 4,094.19，涨 32.47 点（+0.80%）；开 4,091.26，高 4,113.26，低 4,078.53。美元兑日元按日K 155.65，比昨收 155.27 升约 0.25%（日元再弱一点）。十年国债午前约 2.990%，午后仍在 2.99% 附近。黄金日K 4,347（−0.92%）。<span class="sup">1,2,3,4</span></p>
+  <p class="note">日经收 70,683.98，昨收 69,946.86，涨 737.12 点。TOPIX 收 4,183.56，昨收 4,145.22，涨 38.34 点。美元兑日元日K 158.1455，昨收 157.908，日元再弱约 0.24 日元（+0.15%）。十年国债 3.085% 是财务省 10 月 5 日的数，比 10 月 2 日低 1.2 个基点，不是今天的收益率。日经午前稿写，投标前盘中长期利率升到 3.115%，和这张表不是同一个数。<span class="sup">1,3</span></p>
 
   <div class="chart-wrap">
-    <svg viewBox="0 0 640 120" width="100%" height="120" role="img" aria-label="日经今日开高低收">
-      <text x="0" y="14" font-size="12" fill="#6a645a">日经225 今日路径（开盘最高 → 午前砸回去 → 午后小反弹，收到小幅绿）</text>
-      <line x1="16" y1="78" x2="624" y2="78" stroke="#d9d1c3" stroke-width="1"/>
-      <text x="16" y="75" font-size="10" fill="#6a645a">昨收 63,923</text>
-      <polyline fill="none" stroke="#1c1914" stroke-width="2"
-        points="40,28 160,100 280,96 380,72 500,110 600,80"/>
-      <circle cx="40" cy="28" r="3.5" fill="#1b6b4a"/>
-      <circle cx="280" cy="96" r="3.5" fill="#a33b32"/>
-      <circle cx="500" cy="110" r="3.5" fill="#a33b32"/>
-      <circle cx="600" cy="80" r="3.5" fill="#1b6b4a"/>
-      <text x="18" y="22" font-size="11" fill="#1b6b4a">开/高 64,644</text>
-      <text x="230" y="88" font-size="11" fill="#a33b32">前场 63,967</text>
-      <text x="430" y="118" font-size="11" fill="#a33b32">低 63,825</text>
-      <text x="520" y="72" font-size="11" fill="#1b6b4a">收 64,136</text>
+    <svg viewBox="0 0 640 128" width="100%" height="128" role="img" aria-label="日经几个已核实时点">
+      <text x="0" y="14" font-size="12" fill="#6a645a">日经相对昨收多涨了多少点。只画核实过的时点，不是分时。</text>
+      <line x1="36" y1="96" x2="620" y2="96" stroke="#d9d1c3" stroke-width="1"/>
+      <text x="0" y="100" font-size="10" fill="#6a645a">0</text>
+      <polyline fill="none" stroke="#1c1914" stroke-width="2" points="70,95 210,84 360,70 520,32"/>
+      <circle cx="70" cy="95" r="3.5" fill="#1c1914"/>
+      <circle cx="210" cy="84" r="3.5" fill="#1c1914"/>
+      <circle cx="360" cy="70" r="3.5" fill="#1b6b4a"/>
+      <circle cx="520" cy="32" r="3.5" fill="#1b6b4a"/>
+      <text x="48" y="114" font-size="11" fill="#1c1914">开 +8</text>
+      <text x="176" y="76" font-size="11" fill="#1c1914">前场 +135</text>
+      <text x="328" y="62" font-size="11" fill="#1b6b4a">后场开 +284</text>
+      <text x="488" y="24" font-size="11" fill="#1b6b4a">收 +737</text>
     </svg>
-    <div class="chart-cap">来源：日经四本值。横虚线是昨收。开盘穿过线上面很多，午前几乎贴回昨收，午后低点还穿到线下面，收盘重新站上去。<span class="sup">1</span></div>
+    <div class="chart-cap">开 69,954.61（+7.75）。路透写开盘后一度跌到昨收下面，低点分钟没核实。前场收 70,081.53（+134.67）。后场开 70,230.80（+283.94）。收盘 70,683.98。时事写成交大约 21.37 亿股。<span class="sup">2,4</span></div>
   </div>
 
-  <h2>板块：谁在挣钱，谁在挨打</h2>
+  <h2>板块：17 只行业 ETF，不是市值加权</h2>
   <div class="chart-wrap">
-    <svg viewBox="0 0 640 286" width="100%" height="286" role="img" aria-label="东证17业种市值加权涨跌">
-      <line x1="400" y1="6" x2="400" y2="278" stroke="#1c1914" stroke-width="1"/>
-      <rect x="400" y="10" width="143" height="12" fill="#1b6b4a"/><text x="8" y="20" font-size="11">医药品 +2.9%</text>
-      <rect x="400" y="26" width="98" height="12" fill="#1b6b4a"/><text x="8" y="36" font-size="11">房地产 +2.0%</text>
-      <rect x="400" y="42" width="87" height="12" fill="#1b6b4a"/><text x="8" y="52" font-size="11">运输物流 +1.7%</text>
-      <rect x="400" y="58" width="81" height="12" fill="#1b6b4a"/><text x="8" y="68" font-size="11">食品 +1.6%</text>
-      <rect x="400" y="74" width="78" height="12" fill="#1b6b4a"/><text x="8" y="84" font-size="11">信息通信 +1.6%</text>
-      <rect x="400" y="90" width="74" height="12" fill="#1b6b4a"/><text x="8" y="100" font-size="11">商社批发 +1.5%</text>
-      <rect x="400" y="106" width="68" height="12" fill="#1b6b4a"/><text x="8" y="116" font-size="11">金融（除银行） +1.4%</text>
-      <rect x="400" y="122" width="66" height="12" fill="#1b6b4a"/><text x="8" y="132" font-size="11">建设建材 +1.3%</text>
-      <rect x="400" y="138" width="60" height="12" fill="#1b6b4a"/><text x="8" y="148" font-size="11">电气煤气 +1.2%</text>
-      <rect x="400" y="154" width="57" height="12" fill="#1b6b4a"/><text x="8" y="164" font-size="11">汽车运输 +1.1%</text>
-      <rect x="400" y="170" width="46" height="12" fill="#1b6b4a"/><text x="8" y="180" font-size="11">机械 +0.9%</text>
-      <rect x="400" y="186" width="37" height="12" fill="#1b6b4a"/><text x="8" y="196" font-size="11">零售 +0.7%</text>
-      <rect x="400" y="202" width="21" height="12" fill="#1b6b4a"/><text x="8" y="212" font-size="11">素材化学 +0.4%</text>
-      <rect x="400" y="218" width="16" height="12" fill="#1b6b4a"/><text x="8" y="228" font-size="11">银行 +0.3%</text>
-      <rect x="386" y="234" width="14" height="12" fill="#a33b32"/><text x="8" y="244" font-size="11">钢铁有色 −0.3%</text>
-      <rect x="384" y="250" width="16" height="12" fill="#a33b32"/><text x="8" y="260" font-size="11">电机精密 −0.3%</text>
-      <rect x="314" y="266" width="86" height="12" fill="#a33b32"/><text x="8" y="276" font-size="11">能源资源 −1.7%</text>
+    <svg viewBox="0 0 640 292" width="100%" height="292" role="img" aria-label="东证17行业ETF涨跌">
+      <line x1="188" y1="8" x2="188" y2="280" stroke="#1c1914" stroke-width="1"/>
+      <rect x="188" y="12" width="127" height="12" fill="#1b6b4a"/><text x="8" y="22" font-size="11" fill="#1c1914">钢铁有色 +3.03%</text>
+      <rect x="188" y="28" width="85" height="12" fill="#1b6b4a"/><text x="8" y="38" font-size="11" fill="#1c1914">汽车运输机 +2.03%</text>
+      <rect x="188" y="44" width="85" height="12" fill="#1b6b4a"/><text x="8" y="54" font-size="11" fill="#1c1914">银行 +2.02%</text>
+      <rect x="188" y="60" width="57" height="12" fill="#1b6b4a"/><text x="8" y="70" font-size="11" fill="#1c1914">金融（除银行） +1.35%</text>
+      <rect x="188" y="76" width="50" height="12" fill="#1b6b4a"/><text x="8" y="86" font-size="11" fill="#1c1914">医药品 +1.18%</text>
+      <rect x="188" y="92" width="40" height="12" fill="#1b6b4a"/><text x="8" y="102" font-size="11" fill="#1c1914">素材化学 +0.95%</text>
+      <rect x="188" y="108" width="38" height="12" fill="#1b6b4a"/><text x="8" y="118" font-size="11" fill="#1c1914">能源资源 +0.91%</text>
+      <rect x="188" y="124" width="38" height="12" fill="#1b6b4a"/><text x="8" y="134" font-size="11" fill="#1c1914">电机精密 +0.91%</text>
+      <rect x="188" y="140" width="24" height="12" fill="#1b6b4a"/><text x="8" y="150" font-size="11" fill="#1c1914">运输物流 +0.56%</text>
+      <rect x="188" y="156" width="16" height="12" fill="#1b6b4a"/><text x="8" y="166" font-size="11" fill="#1c1914">商社批发 +0.37%</text>
+      <rect x="188" y="172" width="15" height="12" fill="#1b6b4a"/><text x="8" y="182" font-size="11" fill="#1c1914">建设建材 +0.36%</text>
+      <rect x="188" y="188" width="4" height="12" fill="#1b6b4a"/><text x="8" y="198" font-size="11" fill="#1c1914">机械 +0.10%</text>
+      <rect x="188" y="204" width="3" height="12" fill="#1b6b4a"/><text x="8" y="214" font-size="11" fill="#1c1914">电气煤气 +0.08%</text>
+      <rect x="188" y="220" width="3" height="12" fill="#1b6b4a"/><text x="8" y="230" font-size="11" fill="#1c1914">零售 +0.08%</text>
+      <rect x="188" y="236" width="2" height="12" fill="#1b6b4a"/><text x="8" y="246" font-size="11" fill="#1c1914">房地产 +0.04%</text>
+      <rect x="188" y="252" width="2" height="12" fill="#6a645a"/><text x="8" y="262" font-size="11" fill="#1c1914">信息通信服务 0.00%</text>
+      <rect x="180" y="268" width="8" height="12" fill="#a33b32"/><text x="8" y="278" font-size="11" fill="#1c1914">食品 −0.19%</text>
     </svg>
-    <div class="chart-cap">东证17业种，市值加权，只算 300 亿日元以上的普通股。未计入「其他」。刻度约 50 像素＝1%。<span class="sup">2</span></div>
+    <div class="chart-cap">东证 17 行业 ETF（1617–1633）收盘对收盘。不是全市场市值加权。刻度大约 42 像素 = 1%。行情：IBKR。<span class="sup">1</span></div>
   </div>
-  <p>人话：跟昨天反过来。昨天能源加权 +3.9% 把指数染绿；今天能源 −1.7%，钢铁有色、电机精密也红。绿的是医药品、房地产、运输、食品——面宽、偏价值。日经只涨 0.33%、TOPIX 涨 0.80%，就是半导体权重大的指数被拖住，底下多数票在涨。<span class="sup">2,5,7</span></p>
+  <p>人话：17 只里 15 只涨，信息通信收平，食品是唯一收跌的。最猛的是钢铁有色、汽车、银行，不是电机。电机精密 ETF 只 +0.91%，和日经被半导体高价股抬起来，不是一回事。午前稿写信息通信、机械偏软；收到 ETF 上，信息通信是平的，机械小涨。午前的业种排序不要当成收盘。<span class="sup">1,4</span></p>
 
   <hr class="thin">
   <h2>大事</h2>
   <ol class="news">
-    <li><b>FOMC 加了 25bp，东京当“事件过了”买。</b> 美联储 16 日把政策利率提到 3.75%–4.00%，全会一致，2023 年 7 月以来第一次加。点阵图多数人还要再加至少一次。道指昨夜 −1.21%，纳指几乎平，费城半导体涨。东京开盘因此先买 AI/半导体，日经一度 +721。<span class="sup">5,6</span></li>
-    <li><b>开盘就是最高，半导体把日经压回去。</b> 路透写「寄り天」。午前稿：アドテスト、东エレク、イビデン把指数往下拽。前场只剩 +44 点。读卖收盘：プライム八成以上上涨，但 AI/半导体一角被卖，日银会合（17–18 日）还没出，大家不敢追。所以日经小绿、TOPIX 更绿。<span class="sup">1,5</span></li>
-    <li><b>十年国债约 2.99%，日银加息基本定价完。</b> 日经 11:30：新发十年 2.990%（−0.005）。市场当 25bp 升到 1.25% 已经写进价格，开会前有人先平空。银行板块只 +0.3%，不是利率暴冲那天。<span class="sup">4,7</span></li>
-    <li><b>日元略弱、原油走弱，板块对调。</b> 美元兑日元 155.65。汽车等价值票有买盘。路透午前把「原油下跌」写成支撑大盘、打击矿业和石油石炭。能源资源加权 −1.7%，黄金 −0.92%。昨天靠油挣钱的人今天在吐。<span class="sup">3,5,7</span></li>
-    <li><b>レオパレス穿过要约价。</b> 光通信等要约 1,000 日元。15 日锁 791、16 日锁 941，今天开 1,015、收 1,060（+12.6%），成交约 3,736 万股。监理铭柄。价格已经高过要约，不等于要约失败，只是盘面不再是连板。<span class="sup">8</span></li>
-    <li><b>EDINET 解释不了大盘。</b> 当天目录 202 份，样本几乎全是投资信托文件。15:00 之后的公司 IR 不记进今天涨跌。<span class="sup">2</span></li>
+    <li><b>终值回到 7 万，但上午几乎没动。</b> 开盘只高 7.75 点。路透写，涨得太急，开盘后有人先卖，一度跌破昨收，之后又拉回小涨。前场只剩 +135 点。下午才扩到 +737。后半段为什么突然拉开，收盘稿没有给分钟账，这里写原因未核实。<span class="sup">2,4</span></li>
+    <li><b>日经收盘稿把买盘写成两件事。</b> 一是 5 日美股里英伟达连着创新高，东京的爱德万、TDK 这些人工智能和半导体跟着买。爱德万续涨，又创了考虑拆股之后的上市新高。二是日元偏弱，汽车这类出口股被当成顺风。这是新闻归因，不是我们自己算出来的。<span class="sup">2</span></li>
+    <li><b>日经比 TOPIX 更绿，高价股在起作用。</b> 日经 +1.05%，TOPIX +0.92%。日经按股价加权，爱德万这种高价股动一点，指数就动很多。フィスコ午前算过，前场爱德万一只大约贡献 149 点，当时它 40,990 日元、涨 690。收盘报价更高，收盘贡献数字没核实。<span class="sup">1,5</span></li>
+    <li><b>利率高，但股票没被按住。</b> 财务省表还停在 10 月 5 日的 3.085%。日经午前写，今天有十年债投标，投标前盘中利率升到 3.115%。みんかぶ前场说，利率上升的警惕还在，但对股价的拖累有限。投标结果怎么样、有没有改下午的方向，原因未核实。<span class="sup">3,4</span></li>
+    <li><b>不是所有“科技”都在涨。</b> 路透开盘稿写软银集团低开，爱德万在创新高。みんかぶ 15:30 报价：爱德万 41,850（+3.84%），TDK 3,628（+5.25%），软银集团 6,295（−3.10%），铠侠 18,735（−2.01%）。这些是新闻页报价，不是涨跌榜。<span class="sup">4,5</span></li>
   </ol>
 
   <hr class="thin">
-  <h2>个股：市值不算小的大涨大跌</h2>
-  <p class="note">门槛：时价总额 ≥ 300 亿日元，普通股，去掉 ETF/ETN。全市场约 4448 只里筛出 2185 只。涨跌按复权收盘对收盘。|涨跌|≥5% 的，涨的最多 8 只、跌的最多 8 只。今天涨的满 8 只，跌的过 5% 只有 4 只（汽油 ETF 已剔除）。<span class="sup">2</span></p>
-  <div class="pair">
-    <div>
-      <div class="kicker">涨得多</div>
-      <div class="mv"><div><span class="t">6203 豊和工業</span><span class="why">+12.8%，约 302 亿。工作母机、防卫省火器。当天公司新利好未核实。成交约 922 万股。<span class="sup">2</span></span></div><div class="up">+12.8%</div></div>
-      <div class="mv"><div><span class="t">8848 レオパレス２１</span><span class="why">+12.6%，约 3,545 亿。要约 1,000 日元，今天穿过收到 1,060。成交约 3,736 万股。监理铭柄。<span class="sup">2,8</span></span></div><div class="up">+12.6%</div></div>
-      <div class="mv"><div><span class="t">6232 ＡＣＳＬ</span><span class="why">+11.0%，约 321 亿。工业无人机。当天公司新利好未核实。成交约 246 万股。<span class="sup">2</span></span></div><div class="up">+11.0%</div></div>
-      <div class="mv"><div><span class="t">6740 ジャパンディスプレイ</span><span class="why">+10.9%，约 2,274 亿。面板。当天公司新利好未核实。成交约 2,091 万股。<span class="sup">2</span></span></div><div class="up">+10.9%</div></div>
-      <div class="mv"><div><span class="t">278A Ｔｅｒｒａ　Ｄｒｏｎｅ</span><span class="why">+10.1%，约 1,976 亿。昨天 −9.0% 的回弹。当天公司新利好未核实。成交约 176 万股。<span class="sup">2</span></span></div><div class="up">+10.1%</div></div>
-      <div class="mv"><div><span class="t">6946 日本アビオニクス</span><span class="why">+9.8%，约 1,199 亿。防卫电子。当天公司新利好未核实。成交约 46 万股。<span class="sup">2</span></span></div><div class="up">+9.8%</div></div>
-      <div class="mv"><div><span class="t">5574 ＡＢＥＪＡ</span><span class="why">+9.3%，约 326 亿。企业 AI。当天公司新利好未核实。成交约 46 万股。<span class="sup">2</span></span></div><div class="up">+9.3%</div></div>
-      <div class="mv"><div><span class="t">4933 Ｉ−ｎｅ</span><span class="why">+8.8%，约 403 亿。护发「YOLU」。昨天涨停后再涨。当天公司新利好未核实。成交约 159 万股。<span class="sup">2</span></span></div><div class="up">+8.8%</div></div>
-    </div>
-    <div>
-      <div class="kicker">跌得多</div>
-      <div class="mv"><div><span class="t">7826 フルヤ金属</span><span class="why">−6.8%，约 2,524 亿。铂、铱加工。当天公司新利空未核实。成交约 43 万股。<span class="sup">2</span></span></div><div class="down">−6.8%</div></div>
-      <div class="mv"><div><span class="t">5706 三井金属</span><span class="why">−6.7%，约 1.22 万亿。非铁、铜箔。跟资源板块一起吐。当天公司新利空未核实。成交约 186 万股。<span class="sup">2</span></span></div><div class="down">−6.7%</div></div>
-      <div class="mv"><div><span class="t">6387 サムコ</span><span class="why">−5.7%，约 594 亿。半导体蚀刻装置。当天公司新利空未核实。成交约 20 万股。<span class="sup">2</span></span></div><div class="down">−5.7%</div></div>
-      <div class="mv"><div><span class="t">7550 ゼンショーホールディングス</span><span class="why">−5.3%，约 1.67 万亿。餐饮。当天公司新利空未核实。成交约 89 万股。<span class="sup">2</span></span></div><div class="down">−5.3%</div></div>
-    </div>
-  </div>
-  <p class="note">跌幅过 5% 的普通股只有这 4 只，不够 8 只就停。汽油 ETF（prod=023）已剔除。指数层面最大拉动在医药品和房地产，最大拖累在能源和半导体设备。<span class="sup">2</span></p>
-
-  <hr class="thin">
-  <h2>你的关注</h2>
-  <p class="note">日股账户没指定持仓。美股那几只今天东京盘不交易，不写进来。</p>
+  <h2>个股</h2>
+  <p>今天没有涨跌榜。IBKR 日本扫描器未开通，没有用别的源补。</p>
+  <p class="note">上面点名的爱德万、TDK、软银、铠侠，只是收盘新闻里被写到的名字，用来说明指数为什么动。不能当成全市场谁涨最多、谁跌最多。15:00 之后才出来的公司公告，不记进今天的涨跌。<span class="sup">1,5</span></p>
 
   <hr class="thin">
   <h2>一句判断</h2>
-  <p class="judge">面比日经好看：多数票在涨，半导体把平均数按住。FOMC 过了，日银还没过。不是荐股。</p>
+  <p class="judge">续涨，不是新故事。新闻能对上的是隔夜美股科技，加上日元偏弱。但行业 ETF 里，钢铁、汽车、银行比电机更猛。个股极端看不到，十年债表还是昨天的。不是荐股。</p>
 
   <hr class="thin">
   <footer>
     <div class="kicker">脚注</div>
     <ol>
-      <li>日经收盘以 JSON extras.n225 为准：64,136.25，昨收 63,923.00，+213.25（+0.33%）。开/高/低来自四季报 15:30：开 64,643.58（09:00），高 64,643.58，低 63,824.56。株探 11:31：前场收 63,966.87（+43.87 / +0.07%）。时事 12:36：后场开 64,178.65（+255.65）。读卖 15:44 TOPIX 收 4,094.19（+32.47 / +0.80%）。フィスコ 9:39 TOPIX 开 4,091.26。四季报盘中：高 4,113.26（09:26），低 4,078.53（15:00）。昨收 TOPIX 4,061.72。JSON indices 当日为空，TOPIX 不用 J-Quants。</li>
-      <li>行情与板块：J-Quants API V2。个股日K、上市铭柄主数据。市值字段单位为百万日元。阈值 300 亿。筛后 2185 只（bars 4448；跳过市值 1989、ETF 5、无昨收 8、无收盘 261）。板块为东证17业种市值加权。gainers 8 / losers 原始 5，其中 1691 WisdomTree 汽油 ETF（prod=023、市值空）已从跌幅榜剔除。extreme_5pct=true。跌幅过 5% 的普通股剩 4 只。</li>
-      <li>美元兑日元：脚本 Yahoo 日K，9 月 17 日 155.651，9 月 16 日 155.266（+0.25%）。数字以 JSON extras.usdjpy 为准。黄金 JSON extras.gold：4,347 vs 4,387.5（−0.92%）。</li>
-      <li>十年国债：JSON 无此字段。日经 11:30：新发十年 2.990%（−0.005）。Investing.com 14:32 报 2.992（高 2.999，低 2.975）。MarketWatch 14:57 JST 报 2.995，昨收 3.000%。正文用约 2.99%。</li>
-      <li>路径：日经 9:07 高开稿（NQN）写米半导体买入、圆安支撑汽车。ロイター 12:02：寄り天 64,643，一度只剩 +5 点；原油下跌、圆安、月末分红权是支撑。フィスコ 9:39：道指 −631.21（−1.21%）收 51,461.90，纳指 −3.14 收 25,978.43，SOX 上涨。日经 12:03 前场：アドテスト、东エレク、イビデン便宜，ファストリ、リクルート、コナミG、三菱重、任天堂高。读卖 15:44 收盘：连续两日上涨，プライム八成超上涨，AI/半导体一角被卖，日银会合观望限制涨幅。</li>
-      <li>FOMC：Bloomberg / ロイター 16 日。加 25bp 至 3.75%–4.00%，全会一致，2023 年 7 月以来首次。点阵 18 人里 16 人年内至少再加一次。ウォーシュ：「通胀太高、持续太久」。利加结果出在东京 16 日收盘之后，记进 17 日开盘，不记进 16 日涨跌。</li>
-      <li>板块数字以 JSON sectors17 为准。能源资源 −1.71%，医药品 +2.85%，房地产 +1.96%，电机精密 −0.31%。フィスコ开盘业种：海运、机械、建设靠前，矿业、石油石炭靠后。株探前场 33 业种 28 个上涨。</li>
-      <li>レオパレス21：日经 9 月 14 日 20:53，光通信 + MBK + NEC キャピタル系，要约 1,000 日元，期间 9/15–10/30，公司推荐应募，监理铭柄。株探 15:30：开 1,015，高/收 1,060，低 1,013，+119（+12.65%），成交 37,355,200。JSON 市值 3,544.81 亿。</li>
+      <li>行情：IBKR Gateway 只读 :4002，日K 收盘对收盘。日经 70,683.98 / 昨收 69,946.86 / +1.05%。TOPIX 4,183.56 / 4,145.22 / +0.92%。美元兑日元 158.1455 / 157.908 / +0.15%。板块是东证 17 行业 ETF（1617–1633），不是市值加权。钢铁有色 +3.03%，汽车运输机 +2.03%，银行 +2.02%，金融（除银行）+1.35%，医药品 +1.18%，素材化学 +0.95%，能源资源 +0.91%，电机精密 +0.91%，运输物流 +0.56%，商社批发 +0.37%，建设建材 +0.36%，机械 +0.10%，电气煤气 +0.08%，零售 +0.08%，房地产 +0.04%，信息通信服务 0.00%，食品 −0.19%。涨跌榜为空：扫描器未开通。</li>
+      <li>收盘数字与归因：时事通信 15:31，日经 +737.12 至 70,683.98，TOPIX +38.34 至 4,183.56。时事 15:46 写成交大约 21.37 亿股。日经 15:35 收盘稿：终值回到 7 万是 7 月 1 日以来；5 日美股英伟达连创新高，东京爱德万、TDK 等获买；爱德万续创新高（拆股调整后）；日元偏弱支撑汽车等出口股。</li>
+      <li>十年国债：财务省当月 CSV，日期 2026-10-05，3.085%，前值 2026-10-02 的 3.097%，−1.2 个基点。比今天的交易日早一天，不能当成 10 月 6 日收益率。日经 11:51 午前稿写盘中长期利率升至 3.115%，那是投标前的市场报价。</li>
+      <li>路径：フィスコ / ウエルスアドバイザー，开盘 69,954.61（+7.75）。路透 9:26：续涨开出后一度转负，爱德万创新高，软银低开，丰田、索尼偏稳。日经 11:51、フィスコ 12:07：前场收 70,081.53（+134.67，+0.19%）。フィスコ 13:21：后场开 70,230.80（+283.94）。前场业种稿写钢铁、非铁、保险偏强，信息通信、机械、电气煤气偏软，只代表午前。みんかぶ前场：利率警惕还在，对股价拖累有限。后半段从 +135 扩到 +737 的细账，原因未核实。</li>
+      <li>个股报价不是 IBKR，也不是涨跌榜。フィスコ 12:28：前场爱德万约 +149 点贡献，价格 40,990、+690。みんかぶ相关铭柄 15:30 报价：爱德万 41,850（+3.84%），TDK 3,628（+5.25%），软银集团 6,295（−3.10%），铠侠 18,735（−2.01%）。没有用这些数字去编一份涨跌榜。</li>
     </ol>
-    <p>不是买卖建议。数字错了直接骂。</p>
+    <p>不是买卖建议。数字以 IBKR 收盘 JSON 为准。新闻对不上的，写原因未核实。</p>
   </footer>
 </body>
 </html>
